@@ -4,18 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="c-practico-js/estilos2.css">
     <title>Cuadrado</title>
 </head>
 <body>
-    <section>
-        <h2>calcula el are y perimetro de un cuadrado</h2>
-        <form action="">
-            <label for="Inputcuadrado">escribe cuanto mide cada lado del Cuadrado</label>
-            <input id="Inputcuadrado" type="number">
-            <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perimetro</button>
-            <button type="button"onclick="calcularAreaCuadrado()">Calcular el area</button>
-        </form>
-    </section>
+    <div class="login-box">
+      <img src="img/cuadrado.gif" class="img" alt="cuadrado">
+      <h1>calcular Area y Perimetro del Cuadrado</h1>
+      <form class="formulario">
+        <label for="Inputcuadrado">ingrese lado del cuadrado</label>
+        <input type="number" placeholder="ingrese lado " id="Inputcuadrado">
+        <div>
+            <button type="button" onclick="calcularAreaCuadrado()">calcular Area</button>
+            <button type="button" onclick="calcularPerimetroCuadrado()">calcular perimetro</button>
+        </div>
+        <br>
+        <a href="figuras.html">regresar</a>
+      </form>
+    </div>
     <script src="figuras.js"></script>
-</body>
+  </body>
 </html>
