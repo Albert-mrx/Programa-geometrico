@@ -177,3 +177,22 @@ function calcularAreaCuadrado(){
     alert(`el Perimetro del Triangulo es : ${perimetro} cm`);
   }
   //----------HTML con CIRCULO----------------
+
+  function calcularAreaCirculo(){
+      const r1=document.getElementById("InputCirculo");
+      let radio=parseInt(r1.value);
+      const Area=areaCirculo(radio);
+      alert(`El Area del circulo es : ${Area}`);
+  }
+  function calcularDiametroCirculo(){
+    const d=document.getElementById("InputCirculo");
+     let radio=parseInt(d.value);
+     let diametro=diametroCirculo(radio);
+    alert(`el Diametro del Circulo es : ${diametro}`);
+  }
+  function calcularPerimetroCirculo(){
+      const p=document.getElementById("InputCirculo");
+      let dato=parseInt(p.value);
+      let Perimetro=perimetroCirculo(dato);
+      alert(`El Perimetro del Circulo es : ${Perimetro}`);
+  }
