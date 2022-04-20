@@ -147,11 +147,33 @@ function calcularPerimetroCuadrado(){
     const input=document.getElementById("Inputcuadrado");
     const Value=input.value;
     const perimetro=perimetroCuadrado(Value);
-    alert(perimetro);
+    alert(`el Perimetro  del Cuadrado es : ${perimetro} cm`);
 }
 function calcularAreaCuadrado(){
   const input=document.getElementById("Inputcuadrado");
   const Value=input.value;
   const area=areaCuadrado(Value);
-  alert(area);
+  alert(`El Area del Cuadrado es : ${area} cm`);
 }
+
+//---aqui interatuamos html triangulo-----------
+ function calcularAreaTriangulo(x,y){
+    x=document.getElementById("InputAltura");
+    y=document.getElementById("InputBase");
+    let a=parseInt(x.value);
+    let b=parseInt(y.value);
+    const Area=areaTriangulo(a,b);
+    alert(`el Area del triangulo es : ${Area} cm`);
+ }
+  function calcularPerimetroTriangulo(l1,l2,l3){
+    l1=document.getElementById("InputLado1");
+    l2=document.getElementById("InputLado2");
+    l3=document.getElementById("InputLado3");
+    let lado1=parseInt(l1.value);
+    let lado2=parseInt(l2.value);
+    let lado3=parseInt(l3.value);
+
+    const perimetro=perimetroTriangulo(lado1,lado2,lado3);
+    alert(`el Perimetro del Triangulo es : ${perimetro} cm`);
+  }
+  //----------HTML con CIRCULO----------------
